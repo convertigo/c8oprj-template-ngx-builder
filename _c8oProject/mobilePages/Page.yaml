@@ -27,6 +27,9 @@ title: First page
     ↓ButtonSet1 [ngx.components.UIDynamicElement-1588171103814]: 
       beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:start"}'
       tagName: ion-buttons
+      ↓BackButton [ngx.components.UIDynamicElement-1643993281257]: 
+        beanData: '{"ionBean":"BackButton"}'
+        tagName: ion-back-button
       ↓MenuButton [ngx.components.UIDynamicElement-1588172846908]: 
         beanData: '{"ionBean":"MenuButton"}'
         tagName: ion-menu-button
