@@ -5,8 +5,9 @@
 
 /DisplayObjects/mobile/*
 !/DisplayObjects/mobile/assets
+/DisplayObjects/mobile/assets/css/animate.min.css
 
-# disable this for custom Flashupdate
+# disable this for custom Flashupdate or CI build with Flashupdate
 /Flashupdate
 
 # enable this to share md5 of built files
