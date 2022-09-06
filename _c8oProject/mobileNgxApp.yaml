@@ -192,17 +192,14 @@ tplProjectName: mobilebuilder_tpl_8_0_0_ngx
             --color: var(--ion-color-primary);
           }
           '
-↓Theme [ngx.components.UITheme-1587022581006]: 
+↓LightTheme [ngx.components.UIStyle-1662391887095]: 
+  comment: This will define the light theme for the application. This will be selected if the device is in light mode.
   styleContent: 
     - xmlizable: 
       - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
       - com.twinsoft.convertigo.beans.common.FormatedContent: 
         →: |
-          '// Ionic Variables and Theming. For more info, please see:
-          // http://ionicframework.com/docs/theming/
-          
-          /** Ionic CSS Variables **/
-          :root {
+          ':root {
             /** primary **/
             --ion-color-primary: #3880ff;
             --ion-color-primary-rgb: 56, 128, 255;
@@ -275,8 +272,15 @@ tplProjectName: mobilebuilder_tpl_8_0_0_ngx
             --ion-color-light-shade: #d7d8da;
             --ion-color-light-tint: #f5f6f9;
           }
-          
-          @media (prefers-color-scheme: dark) {
+          '
+↓AutoDarkTheme [ngx.components.UIStyle-1662391887098]: 
+  comment: This will define the dark theme for the application. This will be selected if the device is in dark mode. You can disable this to disable automatic dark mode switching
+  styleContent: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+        →: |
+          '@media (prefers-color-scheme: dark) {
             /*
              * Dark Colors
              * -------------------------------------------
@@ -430,3 +434,15 @@ tplProjectName: mobilebuilder_tpl_8_0_0_ngx
               --color: white;
             }
           }'
+↓Theme [ngx.components.UITheme-1662391887092]: 
+  styleContent: 
+    - xmlizable: 
+      - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+      - com.twinsoft.convertigo.beans.common.FormatedContent: 
+        →: |
+          // Ionic Variables and Theming. For more info, please see:
+          // http://ionicframework.com/docs/theming/
+          
+          /** Ionic CSS Variables **/
+          
+          
