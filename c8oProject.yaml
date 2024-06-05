@@ -2,6 +2,8 @@
 ↓template_ngxBuilderIonic [core.Project]: 
   comment: Convertigo NGX builder Project
   corsOrigin: =Origin
+  contextTimeout: 59
+  httpSessionTimeout: 60
   version: 8.3.0
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
   ↓Project_reference [references.ProjectSchemaReference]: 
