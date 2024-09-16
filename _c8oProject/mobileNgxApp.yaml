@@ -72,7 +72,12 @@ tplProjectName: mobilebuilder_tpl_8_3_0_ngx
       - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
       - com.twinsoft.convertigo.beans.common.FormatedContent: 
         →: |
-          'ion-menu ion-content {
+          '/* Ionic old custom [hidden] attribute removed since Ionic 7 */
+          [hidden] {
+            display: none !important;
+          }
+          
+          ion-menu ion-content {
             --background: var(--ion-item-background, var(--ion-background-color, #fff));
           }
           
