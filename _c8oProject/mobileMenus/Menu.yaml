@@ -1,5 +1,5 @@
 beanData: '{"ionBean":"Menu"}'
-comment: A menu with all pages added automatically
+comment: Main navigation menu
 tagName: ion-menu
 ↓Header [ngx.components.UIDynamicElement-1500890727582]: 
   beanData: '{"ionBean":"Header"}'
@@ -11,10 +11,11 @@ tagName: ion-menu
       beanData: '{"ionBean":"BarTitle"}'
       tagName: ion-title
       ↓Text [ngx.components.UIText-1500890755422]: 
+        i18n: true
         textValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: plain:My Menu
+            - MobileSmartSourceType: plain:Navigation
 ↓Content [ngx.components.UIDynamicElement-1500890742326]: 
   beanData: '{"ionBean":"Content"}'
   tagName: ion-content
