@@ -177,12 +177,6 @@ title: Home
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:Project_created
-        ↓Text1 [ngx.components.UIText-1771324696323]: 
-          i18n: true
-          textValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:this.global.currentLanguage()
     ↓CardContent [ngx.components.UIDynamicElement-1790010000005]: 
       beanData: '{"ionBean":"CardContent"}'
       tagName: ion-card-content
