@@ -24,5 +24,6 @@ tagName: ion-menu
     tagName: ion-list
     ↓MenuAutoItems [ngx.components.UIDynamicMenuItems-1500890605250]: 
       beanData: '{"ionBean":"MenuAutoItems"}'
+      i18n: true
       itemtitle: 
       tagName: button
