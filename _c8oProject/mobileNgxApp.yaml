@@ -193,18 +193,17 @@ tplProjectName: mobilebuilder_tpl_8_4_0_ngx
           }
           '
 ↓AppEvent [ngx.components.UIAppEvent-1770984391407]: 
-  comment: Initializes global app state when the application starts
   appEvent: onAppInit
+  comment: Initializes global app state when the application starts
   ↓GetTheme [ngx.components.UIDynamicAction-1770984391410]: 
-    comment: Restores and applies the persisted theme preference
     beanData: |
       '{
        "ionBean": "GetThemeAction",
        "applyTheme": "plain:true",
        "emitResizeWhenApply": "plain:true"
       }'
+    comment: Restores and applies the persisted theme preference
   ↓SetLanguage [ngx.components.UIDynamicAction-1770984391413]: 
-    comment: Restores and applies the persisted language preference
     beanData: |
       '{
        "ionBean": "SetLanguageAction",
@@ -212,11 +211,12 @@ tplProjectName: mobilebuilder_tpl_8_4_0_ngx
        "storageKey": "plain:c8o-lang",
        "globalProperty": "plain:currentLanguage"
       }'
+    comment: Restores and applies the persisted language preference
 ↓AppGuard [ngx.components.UIAppGuard-1770993550818]: 
   comment: Central guard used to validate page navigation
   ↓AuthorizePages [ngx.components.UIDynamicAction-1770993550817]: 
-    comment: Applies page authorization rules before route access
     beanData: '{"ionBean":"AuthorizePagesAction"}'
+    comment: Applies page authorization rules before route access
 ↓LightTheme [ngx.components.UIStyle-1771437380143]: 
   comment: This will define the light theme for the application. This will be selected if the device is in light mode.
   styleContent: 
@@ -539,8 +539,8 @@ tplProjectName: mobilebuilder_tpl_8_4_0_ngx
           :root.force-dark ion-title.title-large {
             --color: #e2e8f0;
           }'
-↓TailwindTheme [ngx.components.UITheme-1771437380149]: 
-  comment: Utility-like design token layer mapped to Ionic components
+↓TailwindTheme [ngx.components.UITheme-1771510035841]: 
+  comment: Utility-like design token layer mapped to Ionic components (v8.4.0.4)
   styleContent: 
     - xmlizable: 
       - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
@@ -550,6 +550,8 @@ tplProjectName: mobilebuilder_tpl_8_4_0_ngx
           // http://ionicframework.com/docs/theming/
           
           /** Ionic CSS Variables **/
+          
+          /** version 8.4.0.4 **/
           
           /* tw-ionic.css
              Tailwind-ish theme overlay for Ionic (v6/v7+)
@@ -1940,11 +1942,21 @@ tplProjectName: mobilebuilder_tpl_8_4_0_ngx
             --icon-color: color-mix(in srgb, var(--tw-text-muted) 88%, var(--tw-text) 12%);
             --clear-button-color: color-mix(in srgb, var(--tw-text-muted) 88%, var(--tw-text) 12%);
             --border-radius: var(--tw-radius-md);
+            --padding-start: 0;
+            --padding-end: 0;
             --box-shadow: none;
-            padding-inline: 0.35rem;
+            padding-inline: 0;
+            padding-left: 0;
+            padding-right: 0;
             border: 0;
             border-radius: var(--tw-radius-md);
             box-shadow: none;
+          }
+          
+          ion-toolbar ion-searchbar {
+            padding-inline: 0 !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
           }
           
           ion-searchbar.searchbar-has-focus {
@@ -2734,6 +2746,19 @@ tplProjectName: mobilebuilder_tpl_8_4_0_ngx
           :root.force-dark lib_extendedcomponents_ui_ngx-tinymce .tox .tox-tbtn svg {
             fill: #cbd5e1 !important;
           }
+          :root.force-dark lib_extendedcomponents_ui_ngx-tinymce .tox .tox-mbtn,
+          :root.force-dark lib_extendedcomponents_ui_ngx-tinymce .tox .tox-mbtn__select-label {
+            color: #e2e8f0 !important;
+          }
+          :root.force-dark lib_extendedcomponents_ui_ngx-tinymce .tox .tox-mbtn svg {
+            fill: #cbd5e1 !important;
+          }
+          :root.force-dark lib_extendedcomponents_ui_ngx-tinymce .tox .tox-mbtn:hover,
+          :root.force-dark lib_extendedcomponents_ui_ngx-tinymce .tox .tox-mbtn:focus,
+          :root.force-dark lib_extendedcomponents_ui_ngx-tinymce .tox .tox-mbtn.tox-mbtn--active {
+            background: color-mix(in srgb, var(--tw-primary) 18%, #0f172a 82%) !important;
+            color: #f8fafc !important;
+          }
           :root.force-dark lib_extendedcomponents_ui_ngx-tinymce .tox .tox-tbtn:hover,
           :root.force-dark lib_extendedcomponents_ui_ngx-tinymce .tox .tox-tbtn--enabled,
           :root.force-dark lib_extendedcomponents_ui_ngx-tinymce .tox .tox-tbtn--enabled:hover,
@@ -2779,6 +2804,19 @@ tplProjectName: mobilebuilder_tpl_8_4_0_ngx
             }
             :root:not(.force-light) lib_extendedcomponents_ui_ngx-tinymce .tox .tox-tbtn svg {
               fill: #cbd5e1 !important;
+            }
+            :root:not(.force-light) lib_extendedcomponents_ui_ngx-tinymce .tox .tox-mbtn,
+            :root:not(.force-light) lib_extendedcomponents_ui_ngx-tinymce .tox .tox-mbtn__select-label {
+              color: #e2e8f0 !important;
+            }
+            :root:not(.force-light) lib_extendedcomponents_ui_ngx-tinymce .tox .tox-mbtn svg {
+              fill: #cbd5e1 !important;
+            }
+            :root:not(.force-light) lib_extendedcomponents_ui_ngx-tinymce .tox .tox-mbtn:hover,
+            :root:not(.force-light) lib_extendedcomponents_ui_ngx-tinymce .tox .tox-mbtn:focus,
+            :root:not(.force-light) lib_extendedcomponents_ui_ngx-tinymce .tox .tox-mbtn.tox-mbtn--active {
+              background: color-mix(in srgb, var(--tw-primary) 18%, #0f172a 82%) !important;
+              color: #f8fafc !important;
             }
             :root:not(.force-light) lib_extendedcomponents_ui_ngx-tinymce .tox .tox-tbtn:hover,
             :root:not(.force-light) lib_extendedcomponents_ui_ngx-tinymce .tox .tox-tbtn--enabled,
@@ -2926,6 +2964,8 @@ tplProjectName: mobilebuilder_tpl_8_4_0_ngx
             display: grid;
             gap: 0.5rem;
             padding: 0.2rem;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
             border-radius: var(--tw-radius-lg);
             background: transparent;
           }

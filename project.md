@@ -8,14 +8,14 @@ Convertigo NGX builder Project
 
 ## ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/connectors/images/sqlconnector_color_16x16.png?raw=true "SqlConnector") void
 
-void connector, replace or don't use it
+Placeholder SQL connector for template projects
 
 <details><summary><span style="color:DarkGoldenRod"><i>Transactions</i></span></summary><blockquote><p>
 
 
 ### ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/transactions/images/sqltransaction_color_16x16.png?raw=true "SqlTransaction") void
 
-does nothing
+Placeholder transaction that intentionally cancels execution
 </p></blockquote></details>
 </p></blockquote></details>
 

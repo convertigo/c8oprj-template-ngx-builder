@@ -58,35 +58,35 @@ title: Home
         comment: Toggles between light and dark themes
         tagName: ion-button
         ↓Class [ngx.components.UIAttribute-1770984415381]: 
-          comment: CSS class used to style the theme button
           attrName: class
           attrValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:toolbar-theme-button
+          comment: CSS class used to style the theme button
         ↓Aria [ngx.components.UIAttribute-1770984415384]: 
-          comment: Accessibility label describing the next theme action
           attrName: aria-label
           attrValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: 'script:(this.global && this.global.themeDark) ? this.translate.instant(''Theme_Switch_To_Light'') : this.translate.instant(''Theme_Switch_To_Dark'')'
+          comment: Accessibility label describing the next theme action
         ↓Event [ngx.components.UIControlEvent-1770984415387]: 
           comment: Click handler for theme switching
           ↓SetTheme [ngx.components.UIDynamicAction-1770984415390]: 
-            comment: Applies the opposite theme mode
             beanData: '{"ionBean":"SetThemeAction","dark":"script:!(this.global && this.global.themeDark)"}'
+            comment: Applies the opposite theme mode
         ↓ThemeIcon [ngx.components.UIDynamicElement-1770984415393]: 
           beanData: '{"ionBean":"Icon","IconName":"script:this?.global?.themeDark ? ''sunny-outline'' : ''moon-outline''"}'
           comment: Dynamic icon reflecting the active theme
           tagName: ion-icon
           ↓IconName [ngx.components.UIAttribute-1770984415396]: 
-            comment: Binds the icon name to the current theme state
             attrName: '[name]'
             attrValue: 
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
                 - MobileSmartSourceType: 'script:(this.global && this.global.themeDark) ? ''sunny-outline'' : ''moon-outline'''
+            comment: Binds the icon name to the current theme state
       ↓LanguageSelector [ngx.components.UIDynamicElement-1770984415399]: 
         beanData: |
           '{
@@ -97,46 +97,45 @@ title: Home
         comment: Language selector displayed in the toolbar
         tagName: ion-select
         ↓Class [ngx.components.UIAttribute-1770984415402]: 
-          comment: CSS class used to style the language selector
           attrName: class
           attrValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:toolbar-lang-select
+          comment: CSS class used to style the language selector
         ↓Aria [ngx.components.UIAttribute-1770984415405]: 
-          comment: Accessibility label for language selection
           attrName: aria-label
           attrValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: script:'Language' | translate
+          comment: Accessibility label for language selection
         ↓Interface [ngx.components.UIAttribute-1770984415408]: 
-          comment: Uses popover mode for option rendering
           attrName: '[interface]'
           attrValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: script:'popover'
+          comment: Uses popover mode for option rendering
         ↓Value [ngx.components.UIAttribute-1770984415411]: 
-          comment: Current selected language bound to global state
           attrName: '[value]'
           attrValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: script:this.global.currentLanguage() ?? 'en'
+          comment: Current selected language bound to global state
         ↓SelectedText [ngx.components.UIAttribute-1771328000001]: 
-          comment: Localized label shown for the selected language
           attrName: '[selectedText]'
           attrValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: script:(this.global?.getLanguageLabelKey() ??  'Lang_English') | translate
+          comment: Localized label shown for the selected language
         ↓ChangeEvent [ngx.components.UIControlEvent-1770984415414]: 
-          comment: Triggered when the selected language changes
           attrName: (ionChange)
+          comment: Triggered when the selected language changes
           eventName: ionChange
           ↓SetLanguage [ngx.components.UIDynamicAction-1770984415417]: 
-            comment: Persists and applies the selected language
             beanData: |
               '{
                "ionBean": "SetLanguageAction",
@@ -144,6 +143,7 @@ title: Home
                "storageKey": "plain:c8o-lang",
                "globalProperty": "plain:currentLanguage"
               }'
+            comment: Persists and applies the selected language
         ↓LangEN [ngx.components.UIDynamicElement-1770984415420]: 
           beanData: '{"ionBean":"SelectOption","Value":"plain:en"}'
           comment: English language option
