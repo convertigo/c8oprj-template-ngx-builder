@@ -1,11 +1,11 @@
 ↑default: true
-comment: void connector, replace or don't use it
+comment: Placeholder SQL connector for template projects
 jdbcDriverClassName: org.hsqldb.jdbcDriver
 jdbcURL: jdbc:hsqldb:file:.//hsqldb
 jdbcUserName: SA
 ↓void [transactions.SqlTransaction]: 
   ↑default: true
-  comment: does nothing
+  comment: Placeholder transaction that intentionally cancels execution
   xmlGrouping: true
   xmlOutput: 0
   handlers: 
