@@ -122,14 +122,14 @@ title: Home
           attrValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:this.global.currentLanguage() ?? 'en'
+              - MobileSmartSourceType: script:this.global?.currentLanguage?.() ?? 'en'
           comment: Current selected language bound to global state
         ↓SelectedText [ngx.components.UIAttribute-1771328000001]: 
           attrName: '[selectedText]'
           attrValue: 
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-              - MobileSmartSourceType: script:(this.global?.getLanguageLabelKey() ??  'Lang_English') | translate
+              - MobileSmartSourceType: script:(this.global?.getLanguageLabelKey?.() ??  'Lang_English') | translate
           comment: Localized label shown for the selected language
         ↓ChangeEvent [ngx.components.UIControlEvent-1770984415414]: 
           attrName: (ionChange)
